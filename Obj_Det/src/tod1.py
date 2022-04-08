@@ -31,7 +31,8 @@ def color_generation():
 
 
 def track_detections():
-    video_path = input("Enter video name: ")
+    folder_path = "assets/"
+    video_path = folder_path + input("Enter video name: ")
     print("[INFO] loading video...")
 
     fvs = FileVideoStream(video_path).start()

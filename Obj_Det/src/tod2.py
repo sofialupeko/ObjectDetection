@@ -36,7 +36,8 @@ def search_in_trackers(trackers, frame, main_index, fps, original_fps) -> tuple[
 
 
 def crop_main_car():
-    video_path = input("Enter video name: ")
+    folder_path = "assets/"
+    video_path = folder_path + input("Enter video name: ")
     print("[INFO] loading video...")
 
     fvs = FileVideoStream(video_path).start()
